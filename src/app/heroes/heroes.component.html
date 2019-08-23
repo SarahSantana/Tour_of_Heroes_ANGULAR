@@ -6,6 +6,12 @@
 </div>
 
 <div>
-  <span>Nome: </span>
-  {{ hero.name }}
+  <label for="name">Nome: </label>
+  <input
+    id="name"
+    [(ngModel)]="hero.name"
+    type="text"
+    name="name"
+    placeholder="Nome"
+  >
 </div>
